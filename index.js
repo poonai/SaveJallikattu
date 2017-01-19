@@ -36,4 +36,4 @@ app.post('/', bodyParser.urlencoded({ extended: true }), (req, res, next) => {
     res.redirect('/')
   })
 })
-app.listen(80)
+app.listen(process.env.PORT || 80)
